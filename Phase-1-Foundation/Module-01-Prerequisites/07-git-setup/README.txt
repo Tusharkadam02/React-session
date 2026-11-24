@@ -25,3 +25,12 @@ Working directory(edit) -> Staging Area(git add .) -> repository(git commit)
 //Add and commit
 git add .
 git commit -m "Initial commit"
+
+git branch -M main
+
+git remote add origin <your-repo-url>
+
+git remote -v
+
+//Push
+git push -u origin main
