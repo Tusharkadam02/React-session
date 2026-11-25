@@ -34,3 +34,45 @@ git remote -v
 
 //Push
 git push -u origin main
+
+//Merge request (MR) / Pull request (PR)
+git checkout main
+
+git checkout -b feature/react-setup
+
+//to confirm
+git status 
+git branch
+
+git add .
+git commit -m "feature: react initial setup"
+
+git push
+
+//then copy below command and paste it in the terminal for the first time
+git push --set-upstream origin feature/react-setup
+
+//For second time simply
+git push
+
+//Steps
+git checkout main
+git pull origin main
+git checkout -b <feature-branch>
+git add .
+git status
+git commit -m "commit message"
+git push
+
+
+//Scenario
+//deleted branch
+git stash
+git checkout main
+git pull origin main
+git stash apply  //merge conflicts
+git checkout -b <feature-branch>
+git add .
+git status
+git commit -m "commit message"
+git push
